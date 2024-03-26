@@ -1,8 +1,8 @@
-package xyz.hooy.m3u8client;
+package xyz.hooy.m3u8client.core;
 
 import lombok.extern.slf4j.Slf4j;
-import xyz.hooy.m3u8client.util.OperatingSystem;
-import xyz.hooy.m3u8client.util.OperatingSystemUtils;
+import xyz.hooy.m3u8client.core.util.OperatingSystem;
+import xyz.hooy.m3u8client.core.util.OperatingSystemUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -66,7 +66,7 @@ public abstract class AbstractLocator implements Locator {
             }
         }
         if (Objects.nonNull(is)) {
-            Files.copy(sourcePath, targetPath, StandardCopyOption.REPLACE_EXISTING);
+            Files.copy(is, targetPath, StandardCopyOption.REPLACE_EXISTING);
             is.close();
         } else {
             throw new IOException("Not found client!");
@@ -75,7 +75,7 @@ public abstract class AbstractLocator implements Locator {
 
     protected void createDirectory(Path path) throws IOException {
         if (!Files.isDirectory(path)) {
-            Files.createDirectory(path);
+            Files.createDirectories(path);
         }
     }
 

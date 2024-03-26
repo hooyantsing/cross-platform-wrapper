@@ -1,9 +1,9 @@
-package xyz.hooy.m3u8client.nm3u8dlre;
+package xyz.hooy.m3u8client.core.nm3u8dlre;
 
 import lombok.extern.slf4j.Slf4j;
-import xyz.hooy.m3u8client.AbstractLocator;
-import xyz.hooy.m3u8client.Executor;
-import xyz.hooy.m3u8client.GeneralExecutor;
+import xyz.hooy.m3u8client.core.AbstractLocator;
+import xyz.hooy.m3u8client.core.Executor;
+import xyz.hooy.m3u8client.core.GeneralExecutor;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package xyz.hooy.m3u8client;
+package xyz.hooy.m3u8client.core;
 
 import lombok.extern.slf4j.Slf4j;
 
