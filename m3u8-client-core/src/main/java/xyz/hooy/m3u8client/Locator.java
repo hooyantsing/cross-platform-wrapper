@@ -6,5 +6,5 @@ public interface Locator {
 
     String getExecutablePath() throws IOException;
 
-    Wrapper createExecutor();
+    Executor createExecutor();
 }

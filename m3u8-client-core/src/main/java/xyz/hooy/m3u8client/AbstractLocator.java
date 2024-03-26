@@ -1,7 +1,6 @@
-package xyz.hooy.m3u8client.nm3u8dlre;
+package xyz.hooy.m3u8client;
 
 import lombok.extern.slf4j.Slf4j;
-import xyz.hooy.m3u8client.Locator;
 import xyz.hooy.m3u8client.util.OperatingSystem;
 import xyz.hooy.m3u8client.util.OperatingSystemUtils;
 
@@ -21,20 +20,17 @@ public abstract class AbstractLocator implements Locator {
     private final static String localClientDirectory = System.getProperty("java.io.tmpdir") + jarClientDirector;
     private final String clientName;
     private final String clientVersion;
-    private String executableClient;
+    private final String executablePath;
 
-    public AbstractLocator(String clientName, String clientVersion) {
+    public AbstractLocator(String clientName, String clientVersion) throws IOException {
         this.clientName = clientName;
         this.clientVersion = clientVersion;
-    }
-
-    public void exe() throws IOException {
         createDirectory(Paths.get(localClientDirectory));
         String clientFullName = generateClientName();
         Path sourcePath = Paths.get(jarClientDirector, clientFullName);
         Path targetFile = Paths.get(localClientDirectory, clientFullName);
         initClient(sourcePath, targetFile);
-        executableClient = targetFile.toString();
+        executablePath = targetFile.toString();
     }
 
     public String generateClientName() {
@@ -81,5 +77,10 @@ public abstract class AbstractLocator implements Locator {
         if (!Files.isDirectory(path)) {
             Files.createDirectory(path);
         }
+    }
+
+    @Override
+    public String getExecutablePath() {
+        return executablePath;
     }
 }
