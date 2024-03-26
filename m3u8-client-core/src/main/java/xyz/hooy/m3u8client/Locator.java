@@ -1,8 +1,10 @@
 package xyz.hooy.m3u8client;
 
+import java.io.IOException;
+
 public interface Locator {
 
-    String getExecutablePath();
+    String getExecutablePath() throws IOException;
 
     Wrapper createExecutor();
 }
