@@ -4,13 +4,15 @@ import lombok.Getter;
 
 @Getter
 public enum OperatingSystem {
-    Windows("win", ".exe"), MacOS("macos", "-osx"), Linux("linux", ""), Unknown("", "");
+    Windows(".exe"), MacOS(".app"), Linux(".bin"), Unknown("");
 
-    private final String abbreviation;
     private final String suffix;
 
-    OperatingSystem(String abbreviation, String suffix) {
-        this.abbreviation = abbreviation;
+    OperatingSystem(String suffix) {
         this.suffix = suffix;
+    }
+
+    public String nameToLowerCase() {
+        return name().toLowerCase();
     }
 }

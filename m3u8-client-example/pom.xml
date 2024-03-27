@@ -31,7 +31,7 @@
         </dependency>
         <dependency>
             <groupId>xyz.hooy</groupId>
-            <artifactId>m3u8-client-nativebin-n_m3u8dl_re-win-x64</artifactId>
+            <artifactId>m3u8-client-nativebin-n_m3u8dl_re-windows-x64</artifactId>
             <version>v0.2.0-beta</version>
         </dependency>
         <dependency>
@@ -46,7 +46,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.4</version> <!-- 请使用最新版本 -->
+                <version>3.2.4</version>
                 <executions>
                     <execution>
                         <phase>package</phase>

@@ -38,7 +38,7 @@ public class GeneralLocator implements Locator {
         OperatingSystem operatingSystem = OperatingSystemUtils.currentOperatingSystem();
         return standardClientName.replace("#{CLIENT_NAME}", clientName)
                 .replace("#{CLIENT_VERSION}", clientVersion)
-                .replace("#{OPERATING_SYSTEM}", operatingSystem.getAbbreviation())
+                .replace("#{OPERATING_SYSTEM}", operatingSystem.nameToLowerCase())
                 .replace("#{ARCH}", arch)
                 .replace("#{SUFFER}", operatingSystem.getSuffix());
     }
