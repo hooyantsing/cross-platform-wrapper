@@ -13,7 +13,7 @@ import java.nio.file.StandardCopyOption;
 import java.util.Objects;
 
 @Slf4j
-public abstract class AbstractLocator implements Locator {
+public class GeneralLocator implements Locator {
 
     private final static String standardClientName = "#{CLIENT_NAME}-#{CLIENT_VERSION}-#{OPERATING_SYSTEM}-#{ARCH}#{SUFFER}";
     private final static String jarClientDirector = "xyz/hooy/m3u8client/nativebin";
@@ -22,7 +22,7 @@ public abstract class AbstractLocator implements Locator {
     private final String clientVersion;
     private final String executablePath;
 
-    public AbstractLocator(String clientName, String clientVersion) throws IOException {
+    public GeneralLocator(String clientName, String clientVersion) throws IOException {
         this.clientName = clientName;
         this.clientVersion = clientVersion;
         createDirectory(Paths.get(localClientDirectory));
@@ -82,5 +82,10 @@ public abstract class AbstractLocator implements Locator {
     @Override
     public String getExecutablePath() {
         return executablePath;
+    }
+
+    @Override
+    public Executor createExecutor() {
+        return new GeneralExecutor(getExecutablePath());
     }
 }
