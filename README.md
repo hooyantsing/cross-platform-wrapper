@@ -26,7 +26,7 @@
 </dependency>
 <dependency>
     <groupId>xyz.hooy</groupId>
-    <artifactId>m3u8-client-nativebin-n_m3u8dl_re-osx-arm</artifactId>
+    <artifactId>m3u8-client-nativebin-n_m3u8dl_re-macos-arm</artifactId>
     <version>${LASTEST_VERSION}</version>
 </dependency>
 ```

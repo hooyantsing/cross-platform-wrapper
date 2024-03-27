@@ -12,7 +12,7 @@
         <module>m3u8-client-core</module>
         <module>m3u8-client-example</module>
         <module>m3u8-client-nativebin-n_m3u8dl_re-win-x64</module>
-        <module>m3u8-client-nativebin-n_m3u8dl_re-osx-arm</module>
+        <module>m3u8-client-nativebin-n_m3u8dl_re-macos-arm</module>
     </modules>
 
     <properties>

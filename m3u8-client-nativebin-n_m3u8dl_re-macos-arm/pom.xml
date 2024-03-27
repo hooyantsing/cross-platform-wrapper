@@ -9,7 +9,7 @@
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>m3u8-client-nativebin-n_m3u8dl_re-osx-arm</artifactId>
+    <artifactId>m3u8-client-nativebin-n_m3u8dl_re-macos-arm</artifactId>
     <version>v0.2.0-beta</version>
 
     <properties>
