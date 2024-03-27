@@ -22,12 +22,12 @@
 <dependency>
     <groupId>xyz.hooy</groupId>
     <artifactId>m3u8-client-nativebin-n_m3u8dl_re-win-x64</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${LASTEST_VERSION}</version>
 </dependency>
 <dependency>
     <groupId>xyz.hooy</groupId>
     <artifactId>m3u8-client-nativebin-n_m3u8dl_re-osx-arm</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${LASTEST_VERSION}</version>
 </dependency>
 ```
 
