@@ -44,6 +44,8 @@ public class GeneralExecutor implements Executor {
         List<String> execList = execArgs.collect(Collectors.toList());
         log.debug("About to execute {}", String.join(" ", execList));
         executableClient = new ProcessBuilder().command(execList.toArray(new String[0])).start();
+        GeneralKiller killer = new GeneralKiller(executableClient);
+        Runtime.getRuntime().addShutdownHook(killer);
         inputStream = executableClient.getInputStream();
         outputStream = executableClient.getOutputStream();
         errorStream = executableClient.getErrorStream();
