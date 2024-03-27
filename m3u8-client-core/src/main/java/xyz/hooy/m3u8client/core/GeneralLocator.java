@@ -15,7 +15,7 @@ import java.util.Objects;
 @Slf4j
 public class GeneralLocator implements Locator {
 
-    private final static String standardClientName = "#{CLIENT_NAME}-#{CLIENT_VERSION}-#{OPERATING_SYSTEM}-#{ARCH}#{SUFFER}";
+    private final static String standardClientName = "#{CLIENT_NAME}-#{CLIENT_VERSION}-#{OPERATING_SYSTEM}-#{ARCH}.#{SUFFER}";
     private final static String jarClientDirector = "xyz/hooy/m3u8client/nativebin";
     private final static String localClientDirectory = System.getProperty("java.io.tmpdir") + jarClientDirector;
     private final String clientName;

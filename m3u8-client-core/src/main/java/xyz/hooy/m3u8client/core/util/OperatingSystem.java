@@ -4,7 +4,7 @@ import lombok.Getter;
 
 @Getter
 public enum OperatingSystem {
-    Windows(".exe"), MacOS(".app"), Linux(".bin"), Unknown("");
+    Windows("exe"), MacOS("app"), Linux("bin"), Unknown("");
 
     private final String suffix;
 
