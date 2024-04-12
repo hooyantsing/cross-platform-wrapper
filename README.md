@@ -13,30 +13,3 @@
 ### 使用说明
 
 > 详见 **m3u8-client-example** 子工程。
-
-按需在 Maven pom 文件引入依赖：
-
-```
-// 例如我希望支持 Windows 和 MacOS 操作系统
-
-<dependency>
-    <groupId>xyz.hooy</groupId>
-    <artifactId>m3u8-client-nativebin-n_m3u8dl_re-windows-x64</artifactId>
-    <version>${LASTEST_VERSION}</version>
-</dependency>
-<dependency>
-    <groupId>xyz.hooy</groupId>
-    <artifactId>m3u8-client-nativebin-n_m3u8dl_re-macos-arm</artifactId>
-    <version>${LASTEST_VERSION}</version>
-</dependency>
-```
-
-调用代码样例：
-
-```
-GeneralLocator locator = new GeneralLocator("N_m3u8DL-RE", "v0.2.0-beta");
-Executor executor = locator.createExecutor();
-executor.addArguments("https://m3u8-client.hooy.xyz/example.m3u8");
-executor.execute();
-executor.destroy();
-```
