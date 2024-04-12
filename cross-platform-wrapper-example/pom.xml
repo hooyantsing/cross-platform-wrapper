@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>xyz.hooy</groupId>
-        <artifactId>m3u8-client</artifactId>
+        <artifactId>cross-platform-wrapper</artifactId>
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>m3u8-client-example</artifactId>
+    <artifactId>cross-platform-wrapper-example</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -26,17 +26,17 @@
         </dependency>
         <dependency>
             <groupId>xyz.hooy</groupId>
-            <artifactId>m3u8-client-core</artifactId>
+            <artifactId>cross-platform-wrapper-core</artifactId>
             <version>1.0.0</version>
         </dependency>
         <dependency>
             <groupId>xyz.hooy</groupId>
-            <artifactId>m3u8-client-nativebin-n_m3u8dl_re-windows-x64</artifactId>
+            <artifactId>cross-platform-wrapper-nativebin-n_m3u8dl_re-windows-x64</artifactId>
             <version>v0.2.0-beta</version>
         </dependency>
         <dependency>
             <groupId>xyz.hooy</groupId>
-            <artifactId>m3u8-client-nativebin-n_m3u8dl_re-macos-arm</artifactId>
+            <artifactId>cross-platform-wrapper-nativebin-n_m3u8dl_re-macos-arm</artifactId>
             <version>v0.2.0-beta</version>
         </dependency>
     </dependencies>
@@ -57,7 +57,7 @@
                             <transformers>
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>xyz.hooy.example.Nm3u8dlreExample</mainClass>
+                                    <mainClass>xyz.hooy.cpw.example.Nm3u8dlreExample</mainClass>
                                 </transformer>
                             </transformers>
                             <minimizeJar>true</minimizeJar>

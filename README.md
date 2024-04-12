@@ -1,6 +1,6 @@
-# m3u8-client
+# cross-platform-wrapper
 
-> 简单易用的 [N_m3u8DL-RE](https://github.com/nilaoda/N_m3u8DL-RE) 跨平台 Java 包装器。
+> 简单易用的跨平台 Java 包装器。
 
 [![Java](https://img.shields.io/badge/java-8-ae7118.svg?style=flat-square)](https://www.oracle.com/cn/java/technologies)
 
@@ -12,4 +12,4 @@
 
 ### 使用说明
 
-> 详见 **m3u8-client-example** 子工程。
+> 详见 **cross-platform-wrapper-example** 子工程。

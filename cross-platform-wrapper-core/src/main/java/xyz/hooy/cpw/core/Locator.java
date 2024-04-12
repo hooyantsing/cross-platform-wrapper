@@ -1,4 +1,4 @@
-package xyz.hooy.m3u8client.core;
+package xyz.hooy.cpw.core;
 
 import java.io.IOException;
 

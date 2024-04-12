@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>xyz.hooy</groupId>
-    <artifactId>m3u8-client</artifactId>
+    <artifactId>cross-platform-wrapper</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
     <modules>
-        <module>m3u8-client-core</module>
-        <module>m3u8-client-example</module>
-        <module>m3u8-client-nativebin-n_m3u8dl_re-windows-x64</module>
-        <module>m3u8-client-nativebin-n_m3u8dl_re-macos-arm</module>
+        <module>cross-platform-wrapper-core</module>
+        <module>cross-platform-wrapper-example</module>
+        <module>cross-platform-wrapper-nativebin-n_m3u8dl_re-windows-x64</module>
+        <module>cross-platform-wrapper-nativebin-n_m3u8dl_re-macos-arm</module>
     </modules>
 
     <properties>

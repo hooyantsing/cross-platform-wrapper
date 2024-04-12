@@ -1,8 +1,8 @@
-package xyz.hooy.m3u8client.core;
+package xyz.hooy.cpw.core;
 
 import lombok.extern.slf4j.Slf4j;
-import xyz.hooy.m3u8client.core.util.OperatingSystem;
-import xyz.hooy.m3u8client.core.util.OperatingSystemUtils;
+import xyz.hooy.cpw.core.util.OperatingSystem;
+import xyz.hooy.cpw.core.util.OperatingSystemUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,7 +16,7 @@ import java.util.Objects;
 public class GeneralLocator implements Locator {
 
     private final static String standardClientName = "#{CLIENT_NAME}-#{CLIENT_VERSION}-#{OPERATING_SYSTEM}-#{ARCH}.#{SUFFER}";
-    private final static String jarClientDirector = "xyz/hooy/m3u8client/nativebin";
+    private final static String jarClientDirector = "xyz/hooy/cpw/nativebin";
     private final static String localClientDirectory = System.getProperty("java.io.tmpdir") + jarClientDirector;
     private final String clientName;
     private final String clientVersion;

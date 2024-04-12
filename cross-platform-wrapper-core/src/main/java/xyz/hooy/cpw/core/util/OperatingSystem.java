@@ -1,4 +1,4 @@
-package xyz.hooy.m3u8client.core.util;
+package xyz.hooy.cpw.core.util;
 
 import lombok.Getter;
 
