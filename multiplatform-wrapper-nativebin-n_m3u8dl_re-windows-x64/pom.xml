@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>xyz.hooy</groupId>
-        <artifactId>cross-platform-wrapper</artifactId>
+        <artifactId>multiplatform-wrapper</artifactId>
         <version>1.0.0</version>
     </parent>
 
-    <artifactId>cross-platform-wrapper-nativebin-n_m3u8dl_re-macos-arm</artifactId>
+    <artifactId>multiplatform-wrapper-nativebin-n_m3u8dl_re-windows-x64</artifactId>
     <version>v0.2.0-beta</version>
 
     <properties>

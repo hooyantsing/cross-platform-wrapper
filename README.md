@@ -1,6 +1,6 @@
-# cross-platform-wrapper
+# multiplatform-wrapper
 
-> 简单易用的跨平台 Java 包装器。
+> 简单易用的多平台 Java 包装器。
 
 [![Java](https://img.shields.io/badge/java-8-ae7118.svg?style=flat-square)](https://www.oracle.com/cn/java/technologies)
 
@@ -12,4 +12,4 @@
 
 ### 使用说明
 
-> 详见 **cross-platform-wrapper-example** 子工程。
+> 详见 **multiplatform-wrapper-example** 子工程。

@@ -1,4 +1,4 @@
-package xyz.hooy.cpw.core;
+package xyz.hooy.mpw.core;
 
 import java.io.IOException;
 import java.io.InputStream;

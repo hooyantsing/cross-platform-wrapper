@@ -1,4 +1,4 @@
-package xyz.hooy.cpw.core.util;
+package xyz.hooy.mpw.core.util;
 
 public final class OperatingSystemUtils {
 
